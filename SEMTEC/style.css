@@ -3,7 +3,7 @@
 
 /* Center the entire page content */
 body, html {
-    height: 180%;
+    height: auto;
     margin: 0;
     padding: 0;
     display: flex;
@@ -153,7 +153,6 @@ header {
 .footer {
     display: flex;
     justify-content: space-between;
-    /* background-color: #333; */
     color: white;
     padding: 20px;
     width: 100%;
@@ -167,23 +166,18 @@ header {
     
     text-align: center;
 }
-.footer-column2 img{
-    flex: 1;
-    margin-top:-20px ;
-    height: auto;
-    max-width: 20%;
-    text-align: right;
-}
+
 
 /* Style for social icons */
 .social-icons {
     list-style: none;
     padding: 0px;
+    align-items: start;
 }
 
 .social-icons li {
     margin-bottom: 10px;
-    margin-left: -250px;
+    margin-left: -20px;
 }
 
 .social-icons img {
@@ -196,10 +190,77 @@ header {
     max-width: 20%;
     height: auto;
 }
-.qr{
-    align-items: end;
-}
 
+
+/* Mobile-first responsive design */
+
+/* Apply a mobile-first approach with a media query */
+@media (min-width: 768px) {
+    /* Adjust styles for screens wider than 768px */
+  
+    /* Center the header image */
+    .centered-image {
+      display: 100%;
+      margin: 0 auto;
+    }
+  
+    /* Increase font size for the heading */
+    .custom-heading {
+      font-size: 36px;
+    }
+  
+    /* Make columns responsive */
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .column {
+      width: 30%; /* Adjust this value as needed */
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Add more media queries for larger screens if necessary */
+  
+  /* General styles for all screen sizes */
+  
+  /* Ensure images are responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Add some padding and spacing for better readability on smaller screens */
+  body {
+    padding: 20px;
+  }
+  
+  /* Define responsive font sizes */
+  @media (max-width: 768px) {
+    .custom-heading {
+      font-size: 24px;
+    }
+  }
+  
+  /* Style the footer for different screen sizes */
+  .footer {
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin: auto;
+  }
+  
+  /* Adjust the size of the QR code in the footer */
+  .footer-column img {
+    max-width: 20%;
+    height: auto;
+  }
+  
 
 
 
