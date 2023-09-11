@@ -3,7 +3,7 @@
 
 /* Center the entire page content */
 body, html {
-    height: 100vh;
+    height: auto;
     margin: 0;
     padding: 0;
     display: flex;
@@ -157,14 +157,13 @@ header {
     color: white;
     padding: 20px;
     width: 100%;
-    margin-top:-80px;
+    margin-top: -70px;
+  
 }
 
 /* Style for footer columns */
 .footer-column {
     flex: 1;
-    margin-top:-20px ;
-    
     text-align: center;
 }
 
@@ -177,7 +176,7 @@ header {
 }
 
 .social-icons li {
-    margin-bottom: 10px;
+ 
     margin-left: -20px;
 }
 
@@ -190,11 +189,14 @@ header {
 .social-column img {
     max-width: 20%;
     height: auto;
+    margin-right: -100px;
+    
 }
 .qr {
    width: 70px; /* Adjust the size of the QR code image */
     height: auto;
-    margin-right: 20px; /* Add space between social icons and the QR code */
+    margin-top: -500px;
+    margin-left: 100px;
 }
 
 
