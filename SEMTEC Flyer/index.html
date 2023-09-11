@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMTEC Flyer</title>
+    <link rel="icon" href="IMAGES/logo.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="IMAGES/logo.png" type="image/png">
+   
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <a href="https://semtecllc.com/"><img src="IMAGES/semtec.png" alt="Company Logo" class="centered-image"></a>
+        </header>
+        <section class="image-section">
+            <div class="centered-content">
+                <img src="IMAGES/cir.png" alt="Image" class="semtecbig-image">
+            </div>
+        </section>
+
+        <div class="centered-heading">
+           <a href="https://semtecllc.com/upload-your-bom/"> <h1 class="custom-heading" style="color: black;">SUBMIT YOUR BILL OF MATERIAL</h1></a>
+        </div>
+
+        <div class="columns">
+            <!-- First Column -->
+            <div class="column">
+                <div class="box" id="uploadBox">
+                    <div class="icon">01</div>
+                    <p class="box-text"style="color: black;">UPLOAD YOUR BOM</p>
+                    <input type="file" id="fileUpload" class="upload-input" onchange="displayFileName(this)">
+                    <span id="fileName" style="display: none;"></span>
+                </div>
+            </div>
+            <!-- Second Column -->
+            <div class="column">
+                <div class="steps">
+                    <a href="https://semtecllc.com/upload-your-bom/"><h3 class="small-heading" style="color: black;">IN THREE EASY STEPS</h3></a>
+                </div>
+                <div class="box">
+                    <div class="icon">02</div>
+                    <p class="box-text"><a href="https://semtecllc.com/quick-quote/" class="box-link">GET A QUOTE</a></p>
+                </div>
+            </div>
+
+            <!-- Third Column -->
+            <div class="column">
+                <div class="box" id="purchaseOrderBox">
+                    <div class="icon">03</div>
+                    <p class="box-text"><a href="https://semtecllc.com/upload-your-bom/" class="box-link">SUBMIT YOUR PURCHASE ORDER</a></p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-column">
+                <ul class="social-icons">
+                    <li><a href="https://www.linkedin.com/company/semtecllc/"><img src="IMAGES/linked.png" alt="LinkedIn"></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100095058441004"><img src="IMAGES/fb.png" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/SemtecLLC"><img src="IMAGES/twitter (1).png" alt="Twitter"></a></li>
+                    <li><a href="https://www.instagram.com/semtecllc/"><img src="IMAGES/insta.png" alt="LinkedIn"></a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>QR Code</h3>
+                <a href="https://semtecllc.com/"><img src="IMAGES/QR.png" alt="QR Code" class="qr"></a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
