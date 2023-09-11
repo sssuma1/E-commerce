@@ -3,7 +3,7 @@
 
 /* Center the entire page content */
 body, html {
-    height: auto;
+    height: 150vh;
     margin: 0;
     padding: 0;
     display: flex;
