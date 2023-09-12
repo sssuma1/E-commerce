@@ -4,219 +4,243 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEMTEC Flyer</title>
-    <link rel="icon" href="IMAGES/logo.png" type="image/png">
+    <link rel="icon" href="https://semtecllc.com/promotions/IMAGES/logo.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="IMAGES/logo.png" type="image/png">
+    <link rel="icon" href="https://semtecllc.com/promotions/IMAGES/logo.png" type="image/png">
    
     <style>
-         /* Reset some default styles */
- body, h1, p, ul, li {
-    margin: 0;
-    padding: 0;
+        /* Reset some default styles */
+body,
+h1,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
 
 /* Basic styling */
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #fffdfd;
-    color: #333;
-    overflow: hidden; /* Hide content that overflows the viewport */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #fffdfd;
+  color: #333;
+  overflow: hidden; /* Hide content that overflows the viewport */
 }
 
 /* Flyer container styles */
 .page-container {
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Flyer header styles */
 header {
-    text-align: center;
-    margin-top: 25px;
+  text-align: center;
+  margin-top: 25px;
 }
 
 .centered-image {
-    max-width: 400px;
-    display: block;
-    margin: 0 auto;
+  max-width: 350px;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Flyer image section styles */
 .image-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* This makes the section take the full viewport height */
+  width: auto;
+  text-align: center;
+  margin-top: 20px;
 }
 
-/* Adjust the width of the image */
 .semtecbig-image {
-
-    width: 60%; /* Change this value to your desired width */
-    max-width: 100%; /* Ensure the image doesn't exceed its original size */
-    height: auto; /* Maintain the image's aspect ratio */
-    display: block; /* Remove any potential extra spacing */
-    margin: 0 auto; /* Center the image horizontally */
+  max-width: 50%;
+  height: auto;
 }
 
-
+.image-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d7cfcf;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: auto;
+}
 
 /* Flyer heading styles */
 .custom-heading {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 15px;
-    text-decoration: underline;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: underline;
 }
 
 /* Flyer content styles */
 .flyer-content {
-    font-size: 18px;
-    text-align: center;
+  font-size: 18px;
+  text-align: center;
 }
 
 /* Flyer boxes and columns styles */
 .columns {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .column {
-    flex: 1;
-    text-align: center;
-    margin: 10px;
+  flex: 1;
+  text-align: center;
+  margin: 10px;
 }
 
 .box {
-    border: 2px solid #0418f6; /* Blue border */
-    border-radius: 20px; /* Rounded border for the boxes */
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    position: relative;
+  border: 2px solid #0418f6; /* Blue border */
+  border-radius: 20px; /* Rounded border for the boxes */
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
 }
 
 .icon {
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #0418f6; /* Blue background for icons */
-    color: #fff; /* Text color of icons */
-    width: 40px; /* Width of the rounded icon */
-    height: 40px; /* Height of the rounded icon */
-    border-radius: 50%; /* Make the icon round */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 20px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0418f6; /* Blue background for icons */
+  color: #fff; /* Text color of icons */
+  width: 40px; /* Width of the rounded icon */
+  height: 40px; /* Height of the rounded icon */
+  border-radius: 50%; /* Make the icon round */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .box-text {
-    font-weight: bold;
-    font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .small-heading {
-    font-weight: bold;
-    text-decoration: underline;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .box-link {
-    text-decoration: none;
-    color: #000305;
+  text-decoration: none;
+  color: #000305;
 }
 
 /* Hide the default file input and label */
 /* Style for upload input */
 .upload-input {
-    display: none; /* Hide the file input initially */
+  display: none; /* Hide the file input initially */
 }
-
-
 
 /* Flyer footer styles */
 .footer {
- 
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  /* border: 1px solid green; */
 }
 
 .footer-column {
-    text-align: center;
+  text-align: center;
 }
 
 .social-icons {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .social-icons li {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .social-icons img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .qr {
-    max-width: 70px;
-    height: auto;
-    margin-left: 200px;
-    margin-top: -50px;
+  max-width: 70px;
+  height: auto;
+  margin-left: 200px;
+  margin-top: -50px;
 }
 
-/* Responsive Media Queries */
+/* Media Queries for Tablet and Mobile Screens */
 @media screen and (max-width: 768px) {
-    /* Adjust styles for screens up to 768px wide */
-    .page-container {
-        padding: 10px; /* Add some padding to the container */
-    }
-    
-    .semtecbig-image {
-        width: 90%; /* Reduce the image width for smaller screens */
-    }
-    
-    .columns {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+  /* Adjust styles for tablet screens */
+  .semtecbig-image {
+    max-width: 80%;
+  }
+  .image-text {
+    font-size: 18px;
+  }
+  .custom-heading {
+    font-size: 20px;
+  }
+  .flyer-content {
+    font-size: 14px;
+  }
+  .box-text {
+    font-size: 14px;
+  }
 }
 
-
-
+@media screen and (max-width: 480px) {
+  /* Adjust styles for mobile screens */
+  .semtecbig-image {
+    max-width: 100%;
+  }
+  .image-text {
+    font-size: 16px;
+  }
+  .custom-heading {
+    font-size: 18px;
+  }
+  .flyer-content {
+    font-size: 12px;
+  }
+  .box-text {
+    font-size: 12px;
+  }
+}
 
     </style>
 </head>
 <body>
     <div class="page-container">
         <header>
-            <a href="https://semtecllc.com/"><img src="IMAGES/semtec.png" alt="Company Logo" class="centered-image"></a>
+            <a href="https://semtecllc.com/"><img src="https://semtecllc.com/promotions/IMAGES/semtec.png" alt="Company Logo" class="centered-image"></a>
         </header>
         <section class="image-section">
             <div class="centered-content">
-                <img src="IMAGES/cir.png" alt="Image" class="semtecbig-image">
+                <img src="https://semtecllc.com/promotions/IMAGES/cir.png" alt="Image" class="semtecbig-image">
             </div>
         </section>
 
@@ -257,15 +281,15 @@ header {
         <footer class="footer">
             <div class="footer-column">
                 <ul class="social-icons">
-                    <li><a href="https://www.linkedin.com/company/semtecllc/"><img src="IMAGES/linked.png" alt="LinkedIn"></a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100095058441004"><img src="IMAGES/fb.png" alt="Facebook"></a></li>
-                    <li><a href="https://twitter.com/SemtecLLC"><img src="IMAGES/twitter (1).png" alt="Twitter"></a></li>
-                    <li><a href="https://www.instagram.com/semtecllc/"><img src="IMAGES/insta.png" alt="LinkedIn"></a></li>
+                    <li><a href="https://www.linkedin.com/company/semtecllc/"><img src="https://semtecllc.com/promotions/IMAGES/linked.png" alt="LinkedIn"></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100095058441004"><img src="https://semtecllc.com/promotions/IMAGES/fb.png" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/SemtecLLC"><img src="https://semtecllc.com/promotions/IMAGES/twitter (1).png" alt="Twitter"></a></li>
+                    <li><a href="https://www.instagram.com/semtecllc/"><img src="https://semtecllc.com/promotions/IMAGES/insta.png" alt="LinkedIn"></a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h3>QR Code</h3>
-                <a href="https://semtecllc.com/"><img src="IMAGES/QR.png" alt="QR Code" class="qr"></a>
+                <a href="https://semtecllc.com/"><img src="https://semtecllc.com/promotions/IMAGES/QR.png" alt="QR Code" class="qr"></a>
             </div>
         </footer>
     </div>
@@ -293,6 +317,5 @@ header {
 
 
     </script>
-
 </body>
 </html>
