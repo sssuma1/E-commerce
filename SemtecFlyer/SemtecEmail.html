@@ -225,6 +225,27 @@
         <li><a href="https://www.instagram.com/semtecllc/"><img src="https://semtecllc.com/promotions/IMAGES/insta.png" alt="LinkedIn"></a></li>
     </ul>
     <a href="https://semtecllc.com/"><img src="https://semtecllc.com/promotions/IMAGES/QR.png" alt="QR Code" class="qr"></a>
+ <script src="script.js"></script>
+    <script>
+        // JavaScript to trigger file input when the box is clicked
+    document.addEventListener("DOMContentLoaded", function () {
+    const uploadBox = document.getElementById("uploadBox");
+    const fileInput = document.getElementById("fileUpload");
+
+    // Add a click event listener to the box
+    uploadBox.addEventListener("click", function () {
+        fileInput.click(); // Trigger the file input click event
+    });
+
+    // Listen for file selection in the input
+    fileInput.addEventListener("change", function () {
+        // Handle file selection here (e.g., display file name)
+        const selectedFile = fileInput.files[0];
+        if (selectedFile) {
+            alert("Selected file: " + selectedFile.name);
+        }
+    });
+});
 
     
   </div>
