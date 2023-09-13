@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Email Marketing Flyer</title>
-  <style>
+  <title>SEMTEC Flyer</title>
+  <link rel="icon" href="https://semtecllc.com/promotions/IMAGES/logo.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="https://semtecllc.com/promotions/IMAGES/logo.png" type="image/png">  <style>
     /* Reset some default styles */
     body,
     h1,
@@ -19,7 +21,7 @@
     body {
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       background-color: #fffdfd;
-      color: #333;
+      
     }
 
     /* Flyer container styles */
@@ -33,11 +35,11 @@
     /* Flyer header styles */
     header {
       text-align: center;
-      margin-top: 18px;
+      margin-top: 20px;
     }
 
     .centered-image {
-      max-width: 300px;
+      max-width: 350px;
       display: block;
       margin: 0 auto;
     }
@@ -46,21 +48,21 @@
     .image-section {
       width: auto;
       text-align: center;
-      margin-top: 20px;
+      margin-top: auto;
     }
 
     .semtecbig-image {
-      max-width: 100%;
+      max-width: 50%;
       height: auto;
     }
 
-   
     /* Flyer heading styles */
     .custom-heading {
       font-size: 20px;
       font-weight: bold;
       text-align: center;
-      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
       text-decoration: underline;
     }
 
@@ -75,13 +77,13 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 20px;
+     
     }
 
     .column {
       flex: 1;
       text-align: center;
-      margin: 10px;
+      margin: auto;
     }
 
     .box {
@@ -112,7 +114,7 @@
 
     .box-text {
       font-weight: bold;
-      font-size: 18px;
+      font-size: 15px;
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     }
 
@@ -120,8 +122,7 @@
       font-weight: bold;
       text-decoration: underline;
       text-align: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
+   
     }
 
     .box-link {
@@ -137,12 +138,12 @@
 
     /* Flyer footer styles */
     .footer {
-      color: white;
-      padding: 20px;
+   
+      padding: 0%;
       display: flex;
       justify-content: center;
       align-items: center;
-    
+      
     }
 
     .footer-column {
@@ -167,7 +168,7 @@
     }
 
     .qr {
-      max-width: 70px;
+      max-width: 60px;
       height: auto;
     }
   </style>
@@ -175,43 +176,38 @@
 <body>
   <div class="page-container">
     <header>
-      <h1> <a href="https://semtecllc.com/"><img src="https://semtecllc.com/promotions/IMAGES/semtec.png" alt="Company Logo" class="centered-image"></a>
-      </h1>
+        <h1> <a href="https://semtecllc.com/"><img src="https://semtecllc.com/promotions/IMAGES/semtec.png" alt="Company Logo" class="centered-image"></a>
+
     </header>
     <div class="image-section">
-      <img src="https://semtecllc.com/promotions/IMAGES/cir.png" alt="Your Image" class="centered-image">
+        <img src="https://semtecllc.com/promotions/IMAGES/cir.png" alt="Your Image" class="centered-image">
     </div>
     <h2 class="custom-heading">           <a href="https://semtecllc.com/upload-your-bom/"> <h1 class="custom-heading" style="color: black;">SUBMIT YOUR BILL OF MATERIAL</h1></a>
-    </h2>
-    <div class="flyer-content">
-      <p> <a href="https://semtecllc.com/upload-your-bom/"><h3 class="small-heading" style="color: black;">IN THREE EASY STEPS</h3></a>
-      </p>
-    </div>
+        <div class="flyer-content">
+        <p> <a href="https://semtecllc.com/upload-your-bom/"><h3 class="small-heading" style="color: black;">IN THREE EASY STEPS</h3></a>
+        </div>
     <div class="columns">
-        <div class="column">
-            <div class="box" id="uploadBox">
+      <div class="box" id="uploadBox">
                 <div class="icon">01</div>
                 <p class="box-text"style="color: black;">UPLOAD YOUR BOM</p>
                 <input type="file" id="fileUpload" class="upload-input" onchange="displayFileName(this)">
                 <span id="fileName" style="display: none;"></span>
             </div>
-        </div>
       <div class="column">
-        
         <div class="box">
-            <div class="icon">02</div>
+     
+          <div class="icon">02</div>
             <p class="box-text"><a href="https://semtecllc.com/quick-quote/" class="box-link">GET A QUOTE</a></p>
         </div>
-    </div>
+      </div>
       <div class="column">
         <div class="box">
-          <div class="icon">03</div>
-          <p class="box-text"><a href="https://semtecllc.com/upload-your-bom/" class="box-link">SUBMIT YOUR PURCHASE ORDER</a></p>
-
-        </div>
+            <div class="icon">03</div>
+            <p class="box-text"><a href="https://semtecllc.com/upload-your-bom/" class="box-link">SUBMIT YOUR PURCHASE ORDER</a></p>
+  
+          </div>
       </div>
     </div>
-    
     <footer class="footer">
         <div class="footer-column">
             <ul class="social-icons">
@@ -226,30 +222,31 @@
             <a href="https://semtecllc.com/"><img src="https://semtecllc.com/promotions/IMAGES/QR.png" alt="QR Code" class="qr"></a>
         </div>
     </footer>
+    </div>
   </div>
   <script src="script.js"></script>
-    <script>
-        // JavaScript to trigger file input when the box is clicked
-    document.addEventListener("DOMContentLoaded", function () {
-    const uploadBox = document.getElementById("uploadBox");
-    const fileInput = document.getElementById("fileUpload");
+  <script>
+      // JavaScript to trigger file input when the box is clicked
+  document.addEventListener("DOMContentLoaded", function () {
+  const uploadBox = document.getElementById("uploadBox");
+  const fileInput = document.getElementById("fileUpload");
 
-    // Add a click event listener to the box
-    uploadBox.addEventListener("click", function () {
-        fileInput.click(); // Trigger the file input click event
-    });
+  // Add a click event listener to the box
+  uploadBox.addEventListener("click", function () {
+      fileInput.click(); // Trigger the file input click event
+  });
 
-    // Listen for file selection in the input
-    fileInput.addEventListener("change", function () {
-        // Handle file selection here (e.g., display file name)
-        const selectedFile = fileInput.files[0];
-        if (selectedFile) {
-            alert("Selected file: " + selectedFile.name);
-        }
-    });
+  // Listen for file selection in the input
+  fileInput.addEventListener("change", function () {
+      // Handle file selection here (e.g., display file name)
+      const selectedFile = fileInput.files[0];
+      if (selectedFile) {
+          alert("Selected file: " + selectedFile.name);
+      }
+  });
 });
 
 
-    </script>
+  </script>
 </body>
 </html>
