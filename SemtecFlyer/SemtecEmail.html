@@ -33,11 +33,11 @@
     /* Flyer header styles */
     header {
       text-align: center;
-      margin-top: 25px;
+      margin-top: 18px;
     }
 
     .centered-image {
-      max-width: 350px;
+      max-width: 300px;
       display: block;
       margin: 0 auto;
     }
@@ -50,31 +50,23 @@
     }
 
     .semtecbig-image {
-      max-width: 50%;
+      max-width: 100%;
       height: auto;
     }
 
-    .image-text {
-      font-size: 24px;
-      font-weight: bold;
-      color: #d7cfcf;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-      margin-bottom: auto;
-    }
-
+   
     /* Flyer heading styles */
     .custom-heading {
-      font-size: 25px;
+      font-size: 20px;
       font-weight: bold;
       text-align: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin: auto;
       text-decoration: underline;
     }
 
     /* Flyer content styles */
     .flyer-content {
-      font-size: 18px;
+      font-size: 15px;
       text-align: center;
     }
 
@@ -150,7 +142,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #0418f6;
+    
     }
 
     .footer-column {
@@ -196,20 +188,21 @@
       </p>
     </div>
     <div class="columns">
-      <div class="column">
-        <div class="box">
-          <div class="icon">01</div>
-          <p class="box-text"style="color: black;">UPLOAD YOUR BOM</p>
-          <input type="file" id="fileUpload" class="upload-input" onchange="displayFileName(this)">
-          <span id="fileName" style="display: none;"></span>        </div>
-      </div>
-      <div class="column">
-        <div class="box">
-          <div class="icon">02</div>
-          <p class="box-text"><a href="https://semtecllc.com/quick-quote/" class="box-link">GET A QUOTE</a></p>
-
+        <div class="column">
+            <div class="box" id="uploadBox">
+                <div class="icon">01</div>
+                <p class="box-text"style="color: black;">UPLOAD YOUR BOM</p>
+                <input type="file" id="fileUpload" class="upload-input" onchange="displayFileName(this)">
+                <span id="fileName" style="display: none;"></span>
+            </div>
         </div>
-      </div>
+      <div class="column">
+        
+        <div class="box">
+            <div class="icon">02</div>
+            <p class="box-text"><a href="https://semtecllc.com/quick-quote/" class="box-link">GET A QUOTE</a></p>
+        </div>
+    </div>
       <div class="column">
         <div class="box">
           <div class="icon">03</div>
@@ -218,14 +211,23 @@
         </div>
       </div>
     </div>
-    <ul class="social-icons">
-        <li><a href="https://www.linkedin.com/company/semtecllc/"><img src="https://semtecllc.com/promotions/IMAGES/linked.png" alt="LinkedIn"></a></li>
-        <li><a href="https://www.facebook.com/profile.php?id=100095058441004"><img src="https://semtecllc.com/promotions/IMAGES/fb.png" alt="Facebook"></a></li>
-        <li><a href="https://twitter.com/SemtecLLC"><img src="https://semtecllc.com/promotions/IMAGES/twitter (1).png" alt="Twitter"></a></li>
-        <li><a href="https://www.instagram.com/semtecllc/"><img src="https://semtecllc.com/promotions/IMAGES/insta.png" alt="LinkedIn"></a></li>
-    </ul>
-    <a href="https://semtecllc.com/"><img src="https://semtecllc.com/promotions/IMAGES/QR.png" alt="QR Code" class="qr"></a>
- <script src="script.js"></script>
+    
+    <footer class="footer">
+        <div class="footer-column">
+            <ul class="social-icons">
+                <li><a href="https://www.linkedin.com/company/semtecllc/"><img src="https://semtecllc.com/promotions/IMAGES/linked.png" alt="LinkedIn"></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100095058441004"><img src="https://semtecllc.com/promotions/IMAGES/fb.png" alt="Facebook"></a></li>
+                <li><a href="https://twitter.com/SemtecLLC"><img src="https://semtecllc.com/promotions/IMAGES/twitter (1).png" alt="Twitter"></a></li>
+                <li><a href="https://www.instagram.com/semtecllc/"><img src="https://semtecllc.com/promotions/IMAGES/insta.png" alt="LinkedIn"></a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+        
+            <a href="https://semtecllc.com/"><img src="https://semtecllc.com/promotions/IMAGES/QR.png" alt="QR Code" class="qr"></a>
+        </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
     <script>
         // JavaScript to trigger file input when the box is clicked
     document.addEventListener("DOMContentLoaded", function () {
@@ -247,7 +249,7 @@
     });
 });
 
-    
-  </div>
+
+    </script>
 </body>
 </html>
